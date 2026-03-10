@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gamified Life Progress Tracking System</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gamified Life Progress Tracking System">
+<meta name="keywords" content="productivity, tasks, gamification">
+</head>
+
+<body>
+<header><h1>Gamified Life Progress Tracking System</h1></header>
+<div class="main">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <h2>Life System</h2>
+
+        <a href="#">Dashboard</a>
+        <a href="#">Add Task</a>
+        <a href="#">Goals</a>
+        <a href="#">Achievements</a>
+        <a href="#">Profile</a>
+<button onclick="toggleTheme()">🌙 Toggle Theme</button>
+	</div>
+
+<!-- Content -->
+<div class="content">
+
+<div class="topbar">
+
+    <div class="stat">
+        Level: <b id="level">5</b>
+    </div>
+
+    <div class="stat">
+        GP: <b id="gp">850</b>
+    </div>
+
+    <div class="stat">
+        Streak: <b>🔥 6 days</b>
+    </div>
+
+</div>
+
+
+	<h1>Welcome, Varshini</h1>
+        <p>Turn your real-life progress into levels and achievements</p>
+
+<div class="dashboard-grid">
+        <!-- Dashboard -->
+        <div class="card center">
+
+            <h2>Life Level</h2>
+
+            <div class="level-circle">
+                5
+            </div>
+
+            <p><b>Growth Points:</b> 850 GP</p>
+
+            <p><b>Current Streak:</b> 🔥 6 Days</p>
+
+            <div class="progress-bar">
+ 		   <div class="progress" id="progress"></div>
+	    </div>
+
+
+            <p>Next Level at 1200 GP</p>
+
+        </div>
+
+        <!-- Profile -->
+        <div class="card">
+
+<p><b>Rank:</b> Rising Achiever</p>
+
+<div class="badge">
+    Rising Achiever
+</div>
+
+<br><br>
+            <h3>Profile</h3>
+
+            <p>Name: Varshini</p>
+            <p>Rank: Rising Achiever</p>
+            <p>Total GP Earned: 850</p>
+
+        </div>
+
+	<!-- Goals -->
+        <div class="card">
+
+            <h3>Active Goals</h3>
+
+		<ul id="taskList">
+			<li>Complete Java Assignment</li>
+			<li>Practice Coding Daily</li>
+			<li>Workout 5 Days Streak</li>
+		</ul>
+        </div>
+
+
+        <!-- Achievements -->
+<div class="card">
+
+<h3>Achievements</h3>
+
+<ul id="achievements">
+<li>🏅 First Task Completed</li>
+<li>🔥 5 Day Streak</li>
+<li>⭐ Reached Level 5</li>
+</ul>
+
+</div>
+
+
+
+        <!-- Upload Proof -->
+        <div class="card">
+
+            <h3>Complete Task</h3>
+
+            <input type="file" id="proofFile">
+
+            <button onclick="submitProof()">Submit Proof</button>
+
+
+        </div>
+
+        <!-- Add Task -->
+        <div class="card">
+
+            <h3>Add New Task</h3>
+
+<form id="taskForm">
+
+<label for="taskName">Task Name:</label><br>
+<input type="text" id="taskName" placeholder="Enter task name" required><br><br>
+
+<label for="taskType">Task Type:</label><br>
+<select id="taskType">
+<option>Study</option>
+<option>Coding</option>
+<option>Fitness</option>
+<option>Personal</option>
+</select><br><br>
+
+<label for="taskGP">Growth Points Reward:</label><br>
+<input type="number" id="taskGP" placeholder="Enter GP" required>
+
+<button type="submit">Add Task</button>
+
+</form>
+
+        </div>
+
+<div class="card">
+
+<h3>Task Status</h3>
+
+<p>Pending Tasks: <span id="pending">3</span></p>
+<p>Completed Tasks: <span id="completed">12</span></p>
+<p>Total Tasks Created: <span id="total">15</span></p>
+
+</div>
+
+<div class="card">
+
+<h3>Daily Progress</h3>
+
+<p>Tasks Completed Today: 2</p>
+<p>GP Earned Today: 80 GP</p>
+
+</div>
+
+</div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
